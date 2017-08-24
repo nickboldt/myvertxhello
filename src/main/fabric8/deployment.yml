@@ -6,4 +6,3 @@ spec:
         - resources:
             limits:
               memory: '250Mi'
-              
