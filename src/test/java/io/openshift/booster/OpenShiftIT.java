@@ -46,7 +46,7 @@ public class OpenShiftIT {
 
     @Test
     public void testThatWeServeAsExpected() throws MalformedURLException {
-        get("/api/greeting").then().body("content", equalTo(String.format(template, "World")));
+        get("/api/greeting").then().body("content", equalTo(String.format(template, "People!")));
         get("/api/greeting?name=vert.x").then().body("content", equalTo(String.format(template, "vert.x")));
     }
 
